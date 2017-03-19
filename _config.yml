@@ -1,0 +1,19 @@
+title: Gerrit Beine
+email: mail@gerritbeine.com
+baseurl: ""
+url: ""
+twitter_username: gerritbeine
+github_username:  gbeine
+encoding: utf-8
+
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
