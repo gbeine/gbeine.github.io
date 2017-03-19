@@ -7,7 +7,7 @@ github_username:  gbeine
 encoding: utf-8
 
 markdown: kramdown
-theme: jekyll-theme-cayman
+theme: minima
 gems:
   - jekyll-sitemap
   - jekyll-paginate
