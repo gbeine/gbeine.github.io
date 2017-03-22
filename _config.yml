@@ -1,9 +1,33 @@
 title: Gerrit Beine
+tagline: An agile mind thinking about volatilty, uncercainty, complexity, and ambiguity
 email: mail@gerritbeine.com
 baseurl: ""
 url: ""
-twitter_username: gerritbeine
-github_username:  gbeine
+
+author:
+  name:        "Gerrit Beine"
+  email:       "mail@gerritbeine.com"
+  xing:        "Gerrit_Beine"
+  linkedin:    "gerritbeine"
+  slideshare:  "gerritbeine"
+  twitter:     "GerritBeine"
+  google-plus: "gerritbeine"
+  github:      "gbeine"
+  goodreads:   "31186993-gerrit-beine"
+  youtube:     "UCqu6H_0moQmU77YRpsaWudg"
+  rss:         "feed.xml"
+
+navigation:
+- title: About
+  url: /about
+- title: Imprint
+  url: /imprint
+
+permalink: /:year/:month/:title/
+
+tag_dir: /tag
+category_dir: /category
+
 encoding: utf-8
 
 markdown: kramdown
@@ -13,7 +37,11 @@ gems:
   - jekyll-paginate
   - jekyll-feed
 exclude:
+  - .git
+  - .gitignore
+  - .sass-cache
   - Gemfile
   - Gemfile.lock
+  - sass
+  - scripts
   - vendor
-
