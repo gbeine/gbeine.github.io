@@ -1,5 +1,5 @@
 title: Gerrit Beine
-tagline: An agile mind thinking about volatilty, uncercainty, complexity, and ambiguity
+tagline: Meditations on Agile
 email: mail@gerritbeine.com
 baseurl: ""
 url: ""
@@ -15,13 +15,14 @@ author:
   github:      "gbeine"
   goodreads:   "31186993-gerrit-beine"
   youtube:     "UCqu6H_0moQmU77YRpsaWudg"
-  rss:         "feed.xml"
 
 navigation:
 - title: About
   url: /about
 - title: Imprint
   url: /imprint
+- title: Trainings
+  url: /trainings
 
 permalink: /:year/:month/:title/
 
@@ -33,8 +34,6 @@ encoding: utf-8
 markdown: kramdown
 theme: minima
 gems:
-  - jekyll-sitemap
-  - jekyll-paginate
   - jekyll-feed
 exclude:
   - .git
