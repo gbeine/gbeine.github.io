@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<h1>
+  Articles by tag {{ page.name }}
+</h1>
+
+{% for post in site.posts %}
+  {% for tag in post.tags %}
+    {% if tag == page.slug %}
+        {% capture posts_content_temp %}{{ posts_content }}
+        <li>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          {% include post-date.html %}
+        </li>
+        {% endcapture %}
+        {% assign posts_content = posts_content_temp %}
+      {% endif %}
+    {% endfor %}
+{% endfor %}
+
+<div class="home">
+
+  {{ content }}
+
+{% if posts_content %}
+  <ul class="post-list">
+    {{ posts_content }}
+  </ul>
+  {% else %}
+    <p>There are no posts in this tag.</p>
+{% endif %}
+
+</div>

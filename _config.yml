@@ -1,8 +1,6 @@
 title: Gerrit Beine
 tagline: Meditations on Agile
 email: mail@gerritbeine.com
-baseurl: ""
-url: ""
 
 author:
   name:        "Gerrit Beine"
@@ -16,6 +14,11 @@ author:
   goodreads:   "31186993-gerrit-beine"
   youtube:     "UCqu6H_0moQmU77YRpsaWudg"
 
+collections:
+  tags:
+    output: true
+    permalink: /tag/:name/
+
 navigation:
 - title: About
   url: /about
@@ -25,16 +28,26 @@ navigation:
   url: /trainings
 
 permalink: /:year/:month/:title/
-
-tag_dir: /tag
-category_dir: /category
-
-encoding: utf-8
+timezone: Europe/Berlin
 
 markdown: kramdown
+excerpt_separator: "\n\n\n"
+highlighter: rouge
+encoding: utf-8
+# paginate: 5
+# paginate_path: '/page/:num/'
+
 theme: minima
-gems:
+
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
   - jekyll-feed
+  - jekyll-seo-tag
+
 exclude:
   - .git
   - .gitignore

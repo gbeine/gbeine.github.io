@@ -2,6 +2,7 @@
 layout: post
 title:  "Goodbye, WordPress!"
 date:   2017-03-22
+tags:   [ test, github ]
 ---
 After eleven years with WordPress I decided to move on.
 

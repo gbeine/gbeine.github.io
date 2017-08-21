@@ -8,9 +8,10 @@ layout: default
 
   <ul class="post-list">
     {% for post in site.posts %}
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
+      <li>
+        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        {% include post-date.html %}
+      </li>
     {% endfor %}
   </ul>
 

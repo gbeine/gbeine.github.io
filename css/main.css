@@ -27,7 +27,7 @@ h1 a {
     text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, li {
     font-family: "Quattrocento Sans", sans-serif;
     color: #333;
 }
@@ -127,6 +127,10 @@ blockquote p {
 
 .post-container {
     margin-bottom: 4rem;
+}
+
+.post-list {
+    list-style: none;
 }
 
 .posts {
